@@ -1,0 +1,11 @@
+bazel_dep(name = "rules_buildbuddy", version = "0.0.1")
+local_path_override(
+    module_name = "rules_buildbuddy",
+    path = "../../"
+)
+
+buildbuddy = use_extension("@rules_buildbuddy//:extensions.bzl", "buildbuddy", dev_dependency = True)
+buildbuddy.toolchain(
+    name = "buildbuddy_toolchain"
+)
+use_repo(buildbuddy, "buildbuddy_toolchain")

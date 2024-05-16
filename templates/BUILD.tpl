@@ -5,7 +5,7 @@ load(
     "java_runtime_files",
 )
 load("@rules_cc//cc:defs.bzl", "cc_toolchain", "cc_toolchain_suite")
-load("@io_buildbuddy_buildbuddy_toolchain//:rules.bzl", "buildbuddy_cc_toolchain")
+load("@rules_buildbuddy//:rules.bzl", "buildbuddy_cc_toolchain")
 load(":cc_toolchain_config.bzl", "cc_toolchain_config")
 load(":llvm_cc_toolchain_config.bzl", "llvm_cc_toolchain_config")
 load(":windows_cc_toolchain_config.bzl", windows_cc_toolchain_config = "cc_toolchain_config")

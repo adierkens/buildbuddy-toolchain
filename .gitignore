@@ -28,6 +28,4 @@ bazel-*
 # Node dependencies
 node_modules
 
-MODULE.bazel*
-
 user.bazelrc
