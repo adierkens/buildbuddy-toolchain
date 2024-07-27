@@ -67,7 +67,7 @@ def _buildbuddy_impl(mctx):
     return mctx.extension_metadata(
         root_module_direct_deps = [],
         root_module_direct_dev_deps = "all",
-        reproducible = False,
+        # reproducible = False,
     )
 
 buildbuddy = module_extension(
